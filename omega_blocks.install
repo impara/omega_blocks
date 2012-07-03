@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the ding_oc_omega_frontend_blocks module.
+ */
+
+/**
+ * Implements hook_enable().
+ */
+function ding_oc_omega_frontend_blocks_enable() {
+
+  fe_block_settings_features_revert('ding_oc_omega_frontend_blocks');
+
+}
