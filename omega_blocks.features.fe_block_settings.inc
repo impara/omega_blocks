@@ -10,6 +10,193 @@
 function omega_blocks_default_fe_block_settings() {
   $export = array();
 
+  // bartik
+  $theme = array();
+
+  $theme['ding_library-ding_menu'] = array(
+    'module' => 'ding_library',
+    'delta' => 'ding_menu',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => 4,
+  );
+
+  $theme['ding_library-library_address'] = array(
+    'module' => 'ding_library',
+    'delta' => 'library_address',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '5',
+    'region' => 'footer',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => 8,
+  );
+
+  $theme['ding_user_frontend-ding-user-loan-number'] = array(
+    'module' => 'ding_user_frontend',
+    'delta' => 'ding-user-loan-number',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '3',
+    'region' => 'sidebar_second',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
+  $theme['ding_user_frontend-ding-username'] = array(
+    'module' => 'ding_user_frontend',
+    'delta' => 'ding-username',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '2',
+    'region' => 'sidebar_second',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
+  $theme['locale-language'] = array(
+    'module' => 'locale',
+    'delta' => 'language',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '1',
+    'region' => 'header',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
+  $theme['menu-menu-footer-menu-1'] = array(
+    'module' => 'menu',
+    'delta' => 'menu-footer-menu-1',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '1',
+    'region' => 'footer',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['menu-menu-footer-menu-2'] = array(
+    'module' => 'menu',
+    'delta' => 'menu-footer-menu-2',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '2',
+    'region' => 'footer',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['menu-menu-footer-menu-3'] = array(
+    'module' => 'menu',
+    'delta' => 'menu-footer-menu-3',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '3',
+    'region' => 'footer',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['menu-menu-footer-menu-4'] = array(
+    'module' => 'menu',
+    'delta' => 'menu-footer-menu-4',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '4',
+    'region' => 'footer',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['search-form'] = array(
+    'module' => 'search',
+    'delta' => 'form',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'highlighted',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['system-main'] = array(
+    'module' => 'system',
+    'delta' => 'main',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'content',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['system-user-menu'] = array(
+    'module' => 'system',
+    'delta' => 'user-menu',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
+  $theme['user-login'] = array(
+    'module' => 'user',
+    'delta' => 'login',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '1',
+    'region' => 'sidebar_second',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
+  $export['bartik'] = $theme;
+
   // oc_omega
   $theme = array();
 
@@ -46,7 +233,7 @@ function omega_blocks_default_fe_block_settings() {
     'delta' => 'ding-user-loan-number',
     'theme' => 'oc_omega',
     'status' => '1',
-    'weight' => '-23',
+    'weight' => '-21',
     'region' => 'user_first',
     'custom' => '0',
     'visibility' => '0',
@@ -74,7 +261,7 @@ function omega_blocks_default_fe_block_settings() {
     'delta' => 'language',
     'theme' => 'oc_omega',
     'status' => '1',
-    'weight' => '-22',
+    'weight' => '-21',
     'region' => 'user_first',
     'custom' => '0',
     'visibility' => '0',
@@ -186,7 +373,7 @@ function omega_blocks_default_fe_block_settings() {
     'delta' => 'login',
     'theme' => 'oc_omega',
     'status' => '1',
-    'weight' => '-20',
+    'weight' => '7',
     'region' => 'user_first',
     'custom' => '0',
     'visibility' => '0',
@@ -196,6 +383,193 @@ function omega_blocks_default_fe_block_settings() {
   );
 
   $export['oc_omega'] = $theme;
+
+  // seven
+  $theme = array();
+
+  $theme['ding_library-ding_menu'] = array(
+    'module' => 'ding_library',
+    'delta' => 'ding_menu',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => 4,
+  );
+
+  $theme['ding_library-library_address'] = array(
+    'module' => 'ding_library',
+    'delta' => 'library_address',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => 8,
+  );
+
+  $theme['ding_user_frontend-ding-user-loan-number'] = array(
+    'module' => 'ding_user_frontend',
+    'delta' => 'ding-user-loan-number',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['ding_user_frontend-ding-username'] = array(
+    'module' => 'ding_user_frontend',
+    'delta' => 'ding-username',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['locale-language'] = array(
+    'module' => 'locale',
+    'delta' => 'language',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['menu-menu-footer-menu-1'] = array(
+    'module' => 'menu',
+    'delta' => 'menu-footer-menu-1',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['menu-menu-footer-menu-2'] = array(
+    'module' => 'menu',
+    'delta' => 'menu-footer-menu-2',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['menu-menu-footer-menu-3'] = array(
+    'module' => 'menu',
+    'delta' => 'menu-footer-menu-3',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['menu-menu-footer-menu-4'] = array(
+    'module' => 'menu',
+    'delta' => 'menu-footer-menu-4',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['search-form'] = array(
+    'module' => 'search',
+    'delta' => 'form',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['system-main'] = array(
+    'module' => 'system',
+    'delta' => 'main',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['system-user-menu'] = array(
+    'module' => 'system',
+    'delta' => 'user-menu',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
+  $theme['user-login'] = array(
+    'module' => 'user',
+    'delta' => 'login',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
+  $export['seven'] = $theme;
 
   $theme_default = variable_get('theme_default', 'garland');
   $themes = list_themes();
